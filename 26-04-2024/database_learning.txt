@@ -1,0 +1,41 @@
+SUBQUERY
+    IN SELECT -> if we want to use query in select, it need to return only one row and one colum (single value)
+
+        SELECT name, price, 
+            (SELECT price FROM products WHERE id = 3) as id_3 
+        FROM products 
+        WHERE price > 867;
+    
+    IN FROM -> Any subquery that can compatible with outer query
+        SELECT name, price_weight_ratio FROM (
+            SELECT name, price / weight as price_weight_ratio FROM products
+            ) AS p 
+        WHERE price_weight_ratio > 5;
+
+    IN WHERE -> WHERE invloves, it can varies in lot of scenarios, dependable on comparing operators
+        SELECT id FROM orders WHERE product_id IN (
+            SELECT id FROM products WHERE  price/weight > 300
+        );
+
+    Correlated Subquery ->
+        SELECT name, price, department FROM products AS p1
+        WHERE p1.price = (
+            SELECT MAX(price) FROM products as p2
+            WHERE p1.department = p2.department
+        );
+
+
+DISTINCT -> SELECT DISTINCT manufacturer FROM phones;, it sample like group by, but not have a aggreated functions
+
+Utility Operator
+ -> GREATEST,LEAST, CASE
+
+DATA TYPES
+    -> NUMERIC
+    -> CHARACTER
+    -> DATE/TIME
+    -> BOOLEAN
+    -> INTERVAL
+
+VALIDATION
+    -> NULL CONSTRAINTS
