@@ -1,0 +1,3 @@
+start-a-django-project -> django-admin startproject my-project
+first need to migrate -> python manage.py migrate
+create super -user ----> python manage.py createsuperuser --username admin --email admin@example.com

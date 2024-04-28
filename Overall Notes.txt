@@ -3,3 +3,5 @@ Create New File PS -> New-Item -ItemType File -Path "youtube_video_downloader.py
 Create new python env -> python -m venv name
 
 -> powershell activate -> venv/Scripts/Activate.ps1
+
+-> change a folder name -> ren "old_path" "new_path"
