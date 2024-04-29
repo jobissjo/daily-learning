@@ -1,3 +1,5 @@
 pytube
 django
 djangorestframework
+pygments
+httpie
