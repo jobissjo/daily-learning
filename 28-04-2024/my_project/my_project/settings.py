@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'quickstart',
     'posts',
     'rest_framework',
-    'snippets'
+    'snippets',
+    'users'
 ]
 
 MIDDLEWARE = [

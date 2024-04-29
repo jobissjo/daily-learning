@@ -1,3 +1,5 @@
 start-a-django-project -> django-admin startproject my-project
 first need to migrate -> python manage.py migrate
 create super -user ----> python manage.py createsuperuser --username admin --email admin@example.com
+remove sqlite3 --> rm -force db.sqlite3
+remove migrations --> rm -r snippets/migrations
