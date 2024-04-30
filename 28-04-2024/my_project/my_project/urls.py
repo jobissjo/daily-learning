@@ -23,9 +23,9 @@ from posts import urls as post_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),  
-    path('', include(post_urls)),  
-    path('snippets/', include('snippets.urls')),
-    path('auth', include(quickstart_urls)),
+    path('post', include(post_urls)),  
+    path('', include('snippets.urls')),
+    path('auth/', include(quickstart_urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 
