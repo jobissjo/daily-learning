@@ -1,0 +1,15 @@
+startproject -> django-admin startproject library
+startapp -> python manage.py startapp app-name
+
+AbstractUser class from Django's authentication models. 
+This model will include a role field to assign different roles to each user.
+
+Restframe work Class
+
+APIView -> to define API endpoints in Django applications
+        -> CB view  provides methods corresponding to HTTP methods (GET, POST, etc) & handles incoming HTTP requests
+        ->By subclassing APIView and implementing methods like get(), post(), put(), delete(), etc., you can define the behavior of your API endpoints. 
+           allows to build RESTful APIs in Django quickly and efficiently.
+
+Response-> used to construct HTTP responses in API views
+        -> allows to return structured data along with appropriate HTTP status codes.
